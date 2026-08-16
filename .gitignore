@@ -1,0 +1,4 @@
+
+# Hidden Python files
+mysite/settings_local.py
+secret_keys.py
