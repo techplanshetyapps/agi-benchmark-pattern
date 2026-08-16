@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: django-agi-benchmark
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn mysite.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.3
