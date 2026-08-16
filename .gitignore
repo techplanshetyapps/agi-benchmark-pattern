@@ -1,4 +1,14 @@
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+venv/
+env/
+ENV/
+.env
 
-# Hidden Python files
-mysite/settings_local.py
-secret_keys.py
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
