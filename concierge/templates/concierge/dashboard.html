@@ -212,7 +212,7 @@ const sphereGeometry = new THREE.SphereGeometry(5000, 60, 40);
 sphereGeometry.scale(-1, 1, 1);
 
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load("{% static 'sky.jpg' %}");
+const texture = textureLoader.load("{{ sky_image_url }}");
 texture.wrapS = THREE.RepeatWrapping;
 texture.wrapT = THREE.ClampToEdgeWrapping;
 

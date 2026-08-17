@@ -66,6 +66,7 @@ TEMPLATES = [
                 #'concierge.context_preprocessor.global_empire_context',
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "django.agiai.context_processors.cloud_assets",
             ],
         },
     },
@@ -139,3 +140,18 @@ STATIC_URL = '/static/'
 OLLAMA_BASE_URL = 'https://ollama.com/api'
 OLLAMA_API_KEY= '488811e73cb347d8be97f304d2cd9cda.0cmtqLFAPRTuBiZ8QtO02BIm'
 OLLAMA_MODEL = os.getenv('OLLAMA_MODEL', 'llama3.2')
+
+import cloudinary
+import cloudinary.uploader
+import cloudinary.utils
+
+# Cloudinary Configuration
+cloudinary.config(
+    cloud_name="qcggyh25",
+    api_key="391732976135421",
+    api_secret="<your_api_secret>",  # Keep your actual API secret secure
+    secure=True
+)
+
+# Optional: If you want Django to use Cloudinary for default file/image uploads
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
