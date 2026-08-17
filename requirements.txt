@@ -30,4 +30,6 @@ typing_extensions==4.16.0
 urllib3==2.7.0
 gunicorn==26.0.0
 packaging==26.3
-
+cloudinary>=1.45.0
+django-cloudinary-storage>=0.3.0
+Pillow>=10.0.0
