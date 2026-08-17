@@ -149,7 +149,7 @@ import cloudinary.utils
 cloudinary.config(
     cloud_name="qcggyh25",
     api_key="391732976135421",
-    api_secret="<your_api_secret>",  # Keep your actual API secret secure
+    api_secret="Kbrxw6n4R4YYpaNhZfohfj1D_PE",  # Keep your actual API secret secure
     secure=True
 )
 
