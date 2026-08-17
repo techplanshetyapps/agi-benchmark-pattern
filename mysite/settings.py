@@ -66,7 +66,7 @@ TEMPLATES = [
                 #'concierge.context_preprocessor.global_empire_context',
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "django.agiai.context_processors.cloud_assets",
+                "concierge.context_processors.cloud_assets",
             ],
         },
     },
